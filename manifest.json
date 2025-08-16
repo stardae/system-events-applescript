@@ -1,0 +1,2898 @@
+{
+  "description": "Control System Events application through AppleScript with full class hierarchy support",
+  "dxt_version": "0.1",
+  "version": "0.1.0",
+  "long_description": "This enhanced extension allows you to control System Events through its official AppleScript API with complete class hierarchy support. Property getters and setters now include the full object path for precise targeting. Includes static data functions for exploring the application's complete class structure and command mappings.",
+  "author": {
+    "name": "StarDAE",
+    "email": "support@stardae.com"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {
+        "dummy": "temp"
+      }
+    }
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "display_name": "System Events (AppleScript)",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "npx @anthropic-ai/dxt pack"
+  },
+  "tools": [
+    {
+      "name": "open_file",
+      "description": "Open a document. (file input)"
+    },
+    {
+      "name": "open_file",
+      "description": "Open a document. (file input)"
+    },
+    {
+      "name": "close_for_window_of_process",
+      "description": "Close a window of process."
+    },
+    {
+      "name": "close_for_document",
+      "description": "Close a document."
+    },
+    {
+      "name": "save_for_window_of_process",
+      "description": "Save a window of process."
+    },
+    {
+      "name": "save_for_document",
+      "description": "Save a document."
+    },
+    {
+      "name": "print_file",
+      "description": "Print a document. (file input)"
+    },
+    {
+      "name": "print_for_window_of_process",
+      "description": "Print a window of process."
+    },
+    {
+      "name": "print_for_document",
+      "description": "Print a document."
+    },
+    {
+      "name": "quit",
+      "description": "Quit the application."
+    },
+    {
+      "name": "count_security_preferences_object",
+      "description": "Return the number of elements of a particular class within a security preferences object."
+    },
+    {
+      "name": "count_classic_domain_object",
+      "description": "Return the number of elements of a particular class within a Classic domain object."
+    },
+    {
+      "name": "count_xml_attribute_of_xml_element",
+      "description": "Return the number of elements of a particular class within a XML attribute of XML element."
+    },
+    {
+      "name": "count_browser_of_ui_element",
+      "description": "Return the number of elements of a particular class within a browser of UI element."
+    },
+    {
+      "name": "count_pop_over_of_ui_element",
+      "description": "Return the number of elements of a particular class within a pop over of UI element."
+    },
+    {
+      "name": "count_slider_of_ui_element",
+      "description": "Return the number of elements of a particular class within a slider of UI element."
+    },
+    {
+      "name": "count_appearance_preferences_object",
+      "description": "Return the number of elements of a particular class within a appearance preferences object."
+    },
+    {
+      "name": "count_busy_indicator_of_ui_element",
+      "description": "Return the number of elements of a particular class within a busy indicator of UI element."
+    },
+    {
+      "name": "count_dock_preferences_object",
+      "description": "Return the number of elements of a particular class within a dock preferences object."
+    },
+    {
+      "name": "count_group_of_ui_element",
+      "description": "Return the number of elements of a particular class within a group of UI element."
+    },
+    {
+      "name": "count_radio_group_of_ui_element",
+      "description": "Return the number of elements of a particular class within a radio group of UI element."
+    },
+    {
+      "name": "count_scripting_result_object",
+      "description": "Return the number of elements of a particular class within a scripting result object."
+    },
+    {
+      "name": "count_cd_and_dvd_preferences_object",
+      "description": "Return the number of elements of a particular class within a CD and DVD preferences object."
+    },
+    {
+      "name": "count_screen_saver_preferences_object",
+      "description": "Return the number of elements of a particular class within a screen saver preferences object."
+    },
+    {
+      "name": "count_table_of_ui_element",
+      "description": "Return the number of elements of a particular class within a table of UI element."
+    },
+    {
+      "name": "count_radio_button_of_radio_group",
+      "description": "Return the number of elements of a particular class within a radio button of radio group."
+    },
+    {
+      "name": "count_grow_area_of_ui_element",
+      "description": "Return the number of elements of a particular class within a grow area of UI element."
+    },
+    {
+      "name": "count_scripting_enumeration_of_scripting_suite",
+      "description": "Return the number of elements of a particular class within a scripting enumeration of scripting suite."
+    },
+    {
+      "name": "count_scroll_bar_of_ui_element",
+      "description": "Return the number of elements of a particular class within a scroll bar of UI element."
+    },
+    {
+      "name": "count_scripting_property_of_scripting_class",
+      "description": "Return the number of elements of a particular class within a scripting property of scripting class."
+    },
+    {
+      "name": "count_attribute_of_ui_element",
+      "description": "Return the number of elements of a particular class within a attribute of UI element."
+    },
+    {
+      "name": "count_menu_bar_item_of_menu_bar",
+      "description": "Return the number of elements of a particular class within a menu bar item of menu bar."
+    },
+    {
+      "name": "count_list_of_ui_element",
+      "description": "Return the number of elements of a particular class within a list of UI element."
+    },
+    {
+      "name": "count_disk",
+      "description": "Return the number of elements of a particular class within a disk."
+    },
+    {
+      "name": "count_location_of_network_preferences_object",
+      "description": "Return the number of elements of a particular class within a location of network preferences object."
+    },
+    {
+      "name": "count_alias_of_disk",
+      "description": "Return the number of elements of a particular class within a alias."
+    },
+    {
+      "name": "count_static_text_of_group",
+      "description": "Return the number of elements of a particular class within a static text of group."
+    },
+    {
+      "name": "count_scripting_definition_object",
+      "description": "Return the number of elements of a particular class within a scripting definition object."
+    },
+    {
+      "name": "count_service_of_location",
+      "description": "Return the number of elements of a particular class within a service of location."
+    },
+    {
+      "name": "count_screen_saver",
+      "description": "Return the number of elements of a particular class within a screen saver."
+    },
+    {
+      "name": "count_menu_item_of_menu",
+      "description": "Return the number of elements of a particular class within a menu item of menu."
+    },
+    {
+      "name": "count_local_domain_object",
+      "description": "Return the number of elements of a particular class within a local domain object."
+    },
+    {
+      "name": "count_text_area_of_ui_element",
+      "description": "Return the number of elements of a particular class within a text area of UI element."
+    },
+    {
+      "name": "count_value_indicator_of_scroll_bar",
+      "description": "Return the number of elements of a particular class within a value indicator of scroll bar."
+    },
+    {
+      "name": "count_progress_indicator_of_ui_element",
+      "description": "Return the number of elements of a particular class within a progress indicator of UI element."
+    },
+    {
+      "name": "count_scripting_element_of_scripting_class",
+      "description": "Return the number of elements of a particular class within a scripting element of scripting class."
+    },
+    {
+      "name": "count_drawer_of_ui_element",
+      "description": "Return the number of elements of a particular class within a drawer of UI element."
+    },
+    {
+      "name": "count_tab_group_of_ui_element",
+      "description": "Return the number of elements of a particular class within a tab group of UI element."
+    },
+    {
+      "name": "count_system_domain_object",
+      "description": "Return the number of elements of a particular class within a system domain object."
+    },
+    {
+      "name": "count_window_of_process",
+      "description": "Return the number of elements of a particular class within a window of process."
+    },
+    {
+      "name": "count_network_preferences_object",
+      "description": "Return the number of elements of a particular class within a network preferences object."
+    },
+    {
+      "name": "count_outline_of_ui_element",
+      "description": "Return the number of elements of a particular class within a outline of UI element."
+    },
+    {
+      "name": "count_pop_up_button_of_ui_element",
+      "description": "Return the number of elements of a particular class within a pop up button of UI element."
+    },
+    {
+      "name": "count_splitter_group_of_ui_element",
+      "description": "Return the number of elements of a particular class within a splitter group of UI element."
+    },
+    {
+      "name": "count_action_of_ui_element",
+      "description": "Return the number of elements of a particular class within a action of UI element."
+    },
+    {
+      "name": "count_disk_item_of_alias",
+      "description": "Return the number of elements of a particular class within a disk item."
+    },
+    {
+      "name": "count_file_package_of_alias",
+      "description": "Return the number of elements of a particular class within a file package."
+    },
+    {
+      "name": "count_process",
+      "description": "Return the number of elements of a particular class within a process."
+    },
+    {
+      "name": "count_scripting_parameter_of_scripting_command",
+      "description": "Return the number of elements of a particular class within a scripting parameter of scripting command."
+    },
+    {
+      "name": "count_insertion_preference",
+      "description": "Return the number of elements of a particular class within a insertion preference."
+    },
+    {
+      "name": "count_scripting_class_of_scripting_suite",
+      "description": "Return the number of elements of a particular class within a scripting class of scripting suite."
+    },
+    {
+      "name": "count_configuration_of_service",
+      "description": "Return the number of elements of a particular class within a configuration of service."
+    },
+    {
+      "name": "count_ui_element_of_window",
+      "description": "Return the number of elements of a particular class within a UI element."
+    },
+    {
+      "name": "count_property_list_item",
+      "description": "Return the number of elements of a particular class within a property list item."
+    },
+    {
+      "name": "count_domain",
+      "description": "Return the number of elements of a particular class within a domain."
+    },
+    {
+      "name": "count_menu_bar_of_process",
+      "description": "Return the number of elements of a particular class within a menu bar of process."
+    },
+    {
+      "name": "count_color_well_of_ui_element",
+      "description": "Return the number of elements of a particular class within a color well of UI element."
+    },
+    {
+      "name": "count_scripting_command_of_scripting_suite",
+      "description": "Return the number of elements of a particular class within a scripting command of scripting suite."
+    },
+    {
+      "name": "count_button_of_scroll_bar",
+      "description": "Return the number of elements of a particular class within a button of scroll bar."
+    },
+    {
+      "name": "count_application_process",
+      "description": "Return the number of elements of a particular class within a application process."
+    },
+    {
+      "name": "count_toolbar_of_ui_element",
+      "description": "Return the number of elements of a particular class within a toolbar of UI element."
+    },
+    {
+      "name": "count_desktop",
+      "description": "Return the number of elements of a particular class within a desktop."
+    },
+    {
+      "name": "count_user_domain_object",
+      "description": "Return the number of elements of a particular class within a user domain object."
+    },
+    {
+      "name": "count_image_of_static_text",
+      "description": "Return the number of elements of a particular class within a image of static text."
+    },
+    {
+      "name": "count_login_item",
+      "description": "Return the number of elements of a particular class within a login item."
+    },
+    {
+      "name": "count_user",
+      "description": "Return the number of elements of a particular class within a user."
+    },
+    {
+      "name": "count_relevance_indicator_of_ui_element",
+      "description": "Return the number of elements of a particular class within a relevance indicator of UI element."
+    },
+    {
+      "name": "count_scripting_suite_of_scripting_definition_object",
+      "description": "Return the number of elements of a particular class within a scripting suite of scripting definition object."
+    },
+    {
+      "name": "count_xml_element_of_xml_data",
+      "description": "Return the number of elements of a particular class within a XML element of XML data."
+    },
+    {
+      "name": "count_print_settings",
+      "description": "Return the number of elements of a particular class within a print settings."
+    },
+    {
+      "name": "count_xml_file",
+      "description": "Return the number of elements of a particular class within a XML file."
+    },
+    {
+      "name": "count_menu_of_menu_bar",
+      "description": "Return the number of elements of a particular class within a menu of menu bar."
+    },
+    {
+      "name": "count_combo_box_of_ui_element",
+      "description": "Return the number of elements of a particular class within a combo box of UI element."
+    },
+    {
+      "name": "count_xml_data",
+      "description": "Return the number of elements of a particular class within a XML data."
+    },
+    {
+      "name": "count_sheet_of_ui_element",
+      "description": "Return the number of elements of a particular class within a sheet of UI element."
+    },
+    {
+      "name": "count_text_field_of_ui_element",
+      "description": "Return the number of elements of a particular class within a text field of UI element."
+    },
+    {
+      "name": "count_scripting_enumerator_of_scripting_enumeration",
+      "description": "Return the number of elements of a particular class within a scripting enumerator of scripting enumeration."
+    },
+    {
+      "name": "count_interface_of_network_preferences_object",
+      "description": "Return the number of elements of a particular class within a interface of network preferences object."
+    },
+    {
+      "name": "count_row_of_ui_element",
+      "description": "Return the number of elements of a particular class within a row of UI element."
+    },
+    {
+      "name": "count_document",
+      "description": "Return the number of elements of a particular class within a document."
+    },
+    {
+      "name": "count_incrementor_of_ui_element",
+      "description": "Return the number of elements of a particular class within a incrementor of UI element."
+    },
+    {
+      "name": "count_file_of_alias",
+      "description": "Return the number of elements of a particular class within a file."
+    },
+    {
+      "name": "count_folder_of_alias",
+      "description": "Return the number of elements of a particular class within a folder."
+    },
+    {
+      "name": "count_network_domain_object",
+      "description": "Return the number of elements of a particular class within a network domain object."
+    },
+    {
+      "name": "count_desk_accessory_process",
+      "description": "Return the number of elements of a particular class within a desk accessory process."
+    },
+    {
+      "name": "count_scroll_area_of_ui_element",
+      "description": "Return the number of elements of a particular class within a scroll area of UI element."
+    },
+    {
+      "name": "count_column_of_ui_element",
+      "description": "Return the number of elements of a particular class within a column of UI element."
+    },
+    {
+      "name": "count_property_list_file",
+      "description": "Return the number of elements of a particular class within a property list file."
+    },
+    {
+      "name": "count_menu_button_of_ui_element",
+      "description": "Return the number of elements of a particular class within a menu button of UI element."
+    },
+    {
+      "name": "count_splitter_of_ui_element",
+      "description": "Return the number of elements of a particular class within a splitter of UI element."
+    },
+    {
+      "name": "count_checkbox_of_group",
+      "description": "Return the number of elements of a particular class within a checkbox of group."
+    },
+    {
+      "name": "delete_for_disk",
+      "description": "Delete a disk."
+    },
+    {
+      "name": "delete_for_alias_of_disk",
+      "description": "Delete a alias."
+    },
+    {
+      "name": "delete_for_file_package_of_alias_of_disk",
+      "description": "Delete a file package."
+    },
+    {
+      "name": "delete_for_folder_of_alias_of_disk",
+      "description": "Delete a folder."
+    },
+    {
+      "name": "duplicate",
+      "description": "Copy an object."
+    },
+    {
+      "name": "exists",
+      "description": "Verify that an object exists."
+    },
+    {
+      "name": "make_security_preferences_object",
+      "description": "Create a new security preferences object."
+    },
+    {
+      "name": "make_classic_domain_object",
+      "description": "Create a new Classic domain object."
+    },
+    {
+      "name": "make_xml_attribute_of_xml_element",
+      "description": "Create a new XML attribute of XML element."
+    },
+    {
+      "name": "make_browser_of_ui_element",
+      "description": "Create a new browser of UI element."
+    },
+    {
+      "name": "make_pop_over_of_ui_element",
+      "description": "Create a new pop over of UI element."
+    },
+    {
+      "name": "make_slider_of_ui_element",
+      "description": "Create a new slider of UI element."
+    },
+    {
+      "name": "make_appearance_preferences_object",
+      "description": "Create a new appearance preferences object."
+    },
+    {
+      "name": "make_busy_indicator_of_ui_element",
+      "description": "Create a new busy indicator of UI element."
+    },
+    {
+      "name": "make_dock_preferences_object",
+      "description": "Create a new dock preferences object."
+    },
+    {
+      "name": "make_group_of_ui_element",
+      "description": "Create a new group of UI element."
+    },
+    {
+      "name": "make_radio_group_of_ui_element",
+      "description": "Create a new radio group of UI element."
+    },
+    {
+      "name": "make_scripting_result_object",
+      "description": "Create a new scripting result object."
+    },
+    {
+      "name": "make_cd_and_dvd_preferences_object",
+      "description": "Create a new CD and DVD preferences object."
+    },
+    {
+      "name": "make_screen_saver_preferences_object",
+      "description": "Create a new screen saver preferences object."
+    },
+    {
+      "name": "make_table_of_ui_element",
+      "description": "Create a new table of UI element."
+    },
+    {
+      "name": "make_radio_button_of_radio_group",
+      "description": "Create a new radio button of radio group."
+    },
+    {
+      "name": "make_grow_area_of_ui_element",
+      "description": "Create a new grow area of UI element."
+    },
+    {
+      "name": "make_scripting_enumeration_of_scripting_suite",
+      "description": "Create a new scripting enumeration of scripting suite."
+    },
+    {
+      "name": "make_scroll_bar_of_ui_element",
+      "description": "Create a new scroll bar of UI element."
+    },
+    {
+      "name": "make_scripting_property_of_scripting_class",
+      "description": "Create a new scripting property of scripting class."
+    },
+    {
+      "name": "make_attribute_of_ui_element",
+      "description": "Create a new attribute of UI element."
+    },
+    {
+      "name": "make_menu_bar_item_of_menu_bar",
+      "description": "Create a new menu bar item of menu bar."
+    },
+    {
+      "name": "make_list_of_ui_element",
+      "description": "Create a new list of UI element."
+    },
+    {
+      "name": "make_disk",
+      "description": "Create a new disk."
+    },
+    {
+      "name": "make_location_of_network_preferences_object",
+      "description": "Create a new location of network preferences object."
+    },
+    {
+      "name": "make_alias_of_disk",
+      "description": "Create a new alias."
+    },
+    {
+      "name": "make_static_text_of_group",
+      "description": "Create a new static text of group."
+    },
+    {
+      "name": "make_scripting_definition_object",
+      "description": "Create a new scripting definition object."
+    },
+    {
+      "name": "make_service_of_location",
+      "description": "Create a new service of location."
+    },
+    {
+      "name": "make_screen_saver",
+      "description": "Create a new screen saver."
+    },
+    {
+      "name": "make_menu_item_of_menu",
+      "description": "Create a new menu item of menu."
+    },
+    {
+      "name": "make_local_domain_object",
+      "description": "Create a new local domain object."
+    },
+    {
+      "name": "make_text_area_of_ui_element",
+      "description": "Create a new text area of UI element."
+    },
+    {
+      "name": "make_value_indicator_of_scroll_bar",
+      "description": "Create a new value indicator of scroll bar."
+    },
+    {
+      "name": "make_progress_indicator_of_ui_element",
+      "description": "Create a new progress indicator of UI element."
+    },
+    {
+      "name": "make_scripting_element_of_scripting_class",
+      "description": "Create a new scripting element of scripting class."
+    },
+    {
+      "name": "make_drawer_of_ui_element",
+      "description": "Create a new drawer of UI element."
+    },
+    {
+      "name": "make_tab_group_of_ui_element",
+      "description": "Create a new tab group of UI element."
+    },
+    {
+      "name": "make_system_domain_object",
+      "description": "Create a new system domain object."
+    },
+    {
+      "name": "make_window_of_process",
+      "description": "Create a new window of process."
+    },
+    {
+      "name": "make_network_preferences_object",
+      "description": "Create a new network preferences object."
+    },
+    {
+      "name": "make_outline_of_ui_element",
+      "description": "Create a new outline of UI element."
+    },
+    {
+      "name": "make_pop_up_button_of_ui_element",
+      "description": "Create a new pop up button of UI element."
+    },
+    {
+      "name": "make_splitter_group_of_ui_element",
+      "description": "Create a new splitter group of UI element."
+    },
+    {
+      "name": "make_action_of_ui_element",
+      "description": "Create a new action of UI element."
+    },
+    {
+      "name": "make_disk_item_of_alias",
+      "description": "Create a new disk item."
+    },
+    {
+      "name": "make_file_package_of_alias",
+      "description": "Create a new file package."
+    },
+    {
+      "name": "make_process",
+      "description": "Create a new process."
+    },
+    {
+      "name": "make_scripting_parameter_of_scripting_command",
+      "description": "Create a new scripting parameter of scripting command."
+    },
+    {
+      "name": "make_insertion_preference",
+      "description": "Create a new insertion preference."
+    },
+    {
+      "name": "make_scripting_class_of_scripting_suite",
+      "description": "Create a new scripting class of scripting suite."
+    },
+    {
+      "name": "make_configuration_of_service",
+      "description": "Create a new configuration of service."
+    },
+    {
+      "name": "make_ui_element_of_window",
+      "description": "Create a new UI element."
+    },
+    {
+      "name": "make_property_list_item",
+      "description": "Create a new property list item."
+    },
+    {
+      "name": "make_domain",
+      "description": "Create a new domain."
+    },
+    {
+      "name": "make_menu_bar_of_process",
+      "description": "Create a new menu bar of process."
+    },
+    {
+      "name": "make_color_well_of_ui_element",
+      "description": "Create a new color well of UI element."
+    },
+    {
+      "name": "make_scripting_command_of_scripting_suite",
+      "description": "Create a new scripting command of scripting suite."
+    },
+    {
+      "name": "make_button_of_scroll_bar",
+      "description": "Create a new button of scroll bar."
+    },
+    {
+      "name": "make_application_process",
+      "description": "Create a new application process."
+    },
+    {
+      "name": "make_toolbar_of_ui_element",
+      "description": "Create a new toolbar of UI element."
+    },
+    {
+      "name": "make_desktop",
+      "description": "Create a new desktop."
+    },
+    {
+      "name": "make_user_domain_object",
+      "description": "Create a new user domain object."
+    },
+    {
+      "name": "make_image_of_static_text",
+      "description": "Create a new image of static text."
+    },
+    {
+      "name": "make_login_item",
+      "description": "Create a new login item."
+    },
+    {
+      "name": "make_user",
+      "description": "Create a new user."
+    },
+    {
+      "name": "make_relevance_indicator_of_ui_element",
+      "description": "Create a new relevance indicator of UI element."
+    },
+    {
+      "name": "make_scripting_suite_of_scripting_definition_object",
+      "description": "Create a new scripting suite of scripting definition object."
+    },
+    {
+      "name": "make_xml_element_of_xml_data",
+      "description": "Create a new XML element of XML data."
+    },
+    {
+      "name": "make_print_settings",
+      "description": "Create a new print settings."
+    },
+    {
+      "name": "make_xml_file",
+      "description": "Create a new XML file."
+    },
+    {
+      "name": "make_menu_of_menu_bar",
+      "description": "Create a new menu of menu bar."
+    },
+    {
+      "name": "make_combo_box_of_ui_element",
+      "description": "Create a new combo box of UI element."
+    },
+    {
+      "name": "make_xml_data",
+      "description": "Create a new XML data."
+    },
+    {
+      "name": "make_sheet_of_ui_element",
+      "description": "Create a new sheet of UI element."
+    },
+    {
+      "name": "make_text_field_of_ui_element",
+      "description": "Create a new text field of UI element."
+    },
+    {
+      "name": "make_scripting_enumerator_of_scripting_enumeration",
+      "description": "Create a new scripting enumerator of scripting enumeration."
+    },
+    {
+      "name": "make_interface_of_network_preferences_object",
+      "description": "Create a new interface of network preferences object."
+    },
+    {
+      "name": "make_row_of_ui_element",
+      "description": "Create a new row of UI element."
+    },
+    {
+      "name": "make_document",
+      "description": "Create a new document."
+    },
+    {
+      "name": "make_incrementor_of_ui_element",
+      "description": "Create a new incrementor of UI element."
+    },
+    {
+      "name": "make_file_of_alias",
+      "description": "Create a new file."
+    },
+    {
+      "name": "make_folder_of_alias",
+      "description": "Create a new folder."
+    },
+    {
+      "name": "make_network_domain_object",
+      "description": "Create a new network domain object."
+    },
+    {
+      "name": "make_desk_accessory_process",
+      "description": "Create a new desk accessory process."
+    },
+    {
+      "name": "make_scroll_area_of_ui_element",
+      "description": "Create a new scroll area of UI element."
+    },
+    {
+      "name": "make_column_of_ui_element",
+      "description": "Create a new column of UI element."
+    },
+    {
+      "name": "make_property_list_file",
+      "description": "Create a new property list file."
+    },
+    {
+      "name": "make_menu_button_of_ui_element",
+      "description": "Create a new menu button of UI element."
+    },
+    {
+      "name": "make_splitter_of_ui_element",
+      "description": "Create a new splitter of UI element."
+    },
+    {
+      "name": "make_checkbox_of_group",
+      "description": "Create a new checkbox of group."
+    },
+    {
+      "name": "move_for_disk_item_of_alias_of_disk",
+      "description": "Move a disk item to a new location."
+    },
+    {
+      "name": "get_name_of_application",
+      "description": "Get The name of the application."
+    },
+    {
+      "name": "get_frontmost_of_application",
+      "description": "Get Is this the active application?"
+    },
+    {
+      "name": "get_version_of_application",
+      "description": "Get The version number of the application."
+    },
+    {
+      "name": "get_name_of_document",
+      "description": "Get Its name. of document"
+    },
+    {
+      "name": "get_modified_of_document",
+      "description": "Get Has it been modified since the last save? of document"
+    },
+    {
+      "name": "get_file_of_document",
+      "description": "Get Its location on disk, if it has one. of document"
+    },
+    {
+      "name": "get_name_of_window_of_process",
+      "description": "Get The title of the window."
+    },
+    {
+      "name": "get_id_of_window_of_process",
+      "description": "Get The unique identifier of the window."
+    },
+    {
+      "name": "get_index_of_window_of_process",
+      "description": "Get The index of the window, ordered front to back."
+    },
+    {
+      "name": "set_index_of_window_of_process",
+      "description": "Set The index of the window, ordered front to back."
+    },
+    {
+      "name": "get_bounds_of_window_of_process",
+      "description": "Get The bounding rectangle of the window."
+    },
+    {
+      "name": "set_bounds_of_window_of_process",
+      "description": "Set The bounding rectangle of the window."
+    },
+    {
+      "name": "get_closeable_of_window_of_process",
+      "description": "Get Does the window have a close button?"
+    },
+    {
+      "name": "get_miniaturizable_of_window_of_process",
+      "description": "Get Does the window have a minimize button?"
+    },
+    {
+      "name": "get_miniaturized_of_window_of_process",
+      "description": "Get Is the window minimized right now?"
+    },
+    {
+      "name": "set_miniaturized_of_window_of_process",
+      "description": "Set Is the window minimized right now?"
+    },
+    {
+      "name": "get_resizable_of_window_of_process",
+      "description": "Get Can the window be resized?"
+    },
+    {
+      "name": "get_visible_of_window_of_process",
+      "description": "Get Is the window visible right now?"
+    },
+    {
+      "name": "set_visible_of_window_of_process",
+      "description": "Set Is the window visible right now?"
+    },
+    {
+      "name": "get_zoomable_of_window_of_process",
+      "description": "Get Does the window have a zoom button?"
+    },
+    {
+      "name": "get_zoomed_of_window_of_process",
+      "description": "Get Is the window zoomed right now?"
+    },
+    {
+      "name": "set_zoomed_of_window_of_process",
+      "description": "Set Is the window zoomed right now?"
+    },
+    {
+      "name": "get_document_of_window_of_process",
+      "description": "Get The document whose contents are displayed in the window."
+    },
+    {
+      "name": "abort_transaction",
+      "description": "Discard the results of a bounded update session with one or more files."
+    },
+    {
+      "name": "begin_transaction",
+      "description": "Begin a bounded update session with one or more files."
+    },
+    {
+      "name": "end_transaction",
+      "description": "Apply the results of a bounded update session with one or more files."
+    },
+    {
+      "name": "get_quit_delay_of_application",
+      "description": "Get the time in seconds the application will idle before quitting; if set to zero, idle time will not cause the application to quit"
+    },
+    {
+      "name": "set_quit_delay_of_application",
+      "description": "Set the time in seconds the application will idle before quitting; if set to zero, idle time will not cause the application to quit"
+    },
+    {
+      "name": "get_script_menu_enabled_of_application",
+      "description": "Get Is the Script menu installed in the menu bar? of application"
+    },
+    {
+      "name": "get_current_user_of_application",
+      "description": "Get the currently logged in user of application"
+    },
+    {
+      "name": "get_full_name_of_user",
+      "description": "Get user's full name"
+    },
+    {
+      "name": "get_home_directory_of_user",
+      "description": "Get path to user's home directory"
+    },
+    {
+      "name": "get_name_of_user",
+      "description": "Get user's short name"
+    },
+    {
+      "name": "get_picture_path_of_user",
+      "description": "Get path to user's picture. Can be set for current user only!"
+    },
+    {
+      "name": "set_picture_path_of_user",
+      "description": "Set path to user's picture. Can be set for current user only!"
+    },
+    {
+      "name": "get_appearance_preferences_of_application",
+      "description": "Get a collection of appearance preferences of application"
+    },
+    {
+      "name": "set_appearance_preferences_of_application",
+      "description": "Set a collection of appearance preferences of application"
+    },
+    {
+      "name": "get_appearance_of_appearance_preferences_object",
+      "description": "Get the overall look of buttons, menus and windows of appearance preferences object"
+    },
+    {
+      "name": "set_appearance_of_appearance_preferences_object",
+      "description": "Set the overall look of buttons, menus and windows of appearance preferences object"
+    },
+    {
+      "name": "get_font_smoothing_of_appearance_preferences_object",
+      "description": "Get Is font smoothing on? of appearance preferences object"
+    },
+    {
+      "name": "set_font_smoothing_of_appearance_preferences_object",
+      "description": "Set Is font smoothing on? of appearance preferences object"
+    },
+    {
+      "name": "get_font_smoothing_limit_of_appearance_preferences_object",
+      "description": "Get the font size at or below which font smoothing is turned off of appearance preferences object"
+    },
+    {
+      "name": "get_font_smoothing_style_of_appearance_preferences_object",
+      "description": "Get the method used for smoothing fonts of appearance preferences object"
+    },
+    {
+      "name": "set_font_smoothing_style_of_appearance_preferences_object",
+      "description": "Set the method used for smoothing fonts of appearance preferences object"
+    },
+    {
+      "name": "get_highlight_color_of_appearance_preferences_object",
+      "description": "Get color used for hightlighting selected text and lists of appearance preferences object"
+    },
+    {
+      "name": "set_highlight_color_of_appearance_preferences_object",
+      "description": "Set color used for hightlighting selected text and lists of appearance preferences object"
+    },
+    {
+      "name": "get_recent_applications_limit_of_appearance_preferences_object",
+      "description": "Get the number of recent applications to track of appearance preferences object"
+    },
+    {
+      "name": "set_recent_applications_limit_of_appearance_preferences_object",
+      "description": "Set the number of recent applications to track of appearance preferences object"
+    },
+    {
+      "name": "get_recent_documents_limit_of_appearance_preferences_object",
+      "description": "Get the number of recent documents to track of appearance preferences object"
+    },
+    {
+      "name": "set_recent_documents_limit_of_appearance_preferences_object",
+      "description": "Set the number of recent documents to track of appearance preferences object"
+    },
+    {
+      "name": "get_recent_servers_limit_of_appearance_preferences_object",
+      "description": "Get the number of recent servers to track of appearance preferences object"
+    },
+    {
+      "name": "set_recent_servers_limit_of_appearance_preferences_object",
+      "description": "Set the number of recent servers to track of appearance preferences object"
+    },
+    {
+      "name": "get_scroll_bar_action_of_appearance_preferences_object",
+      "description": "Get the action performed by clicking the scroll bar of appearance preferences object"
+    },
+    {
+      "name": "set_scroll_bar_action_of_appearance_preferences_object",
+      "description": "Set the action performed by clicking the scroll bar of appearance preferences object"
+    },
+    {
+      "name": "get_smooth_scrolling_of_appearance_preferences_object",
+      "description": "Get Is smooth scrolling used? of appearance preferences object"
+    },
+    {
+      "name": "set_smooth_scrolling_of_appearance_preferences_object",
+      "description": "Set Is smooth scrolling used? of appearance preferences object"
+    },
+    {
+      "name": "get_dark_mode_of_appearance_preferences_object",
+      "description": "Get use dark menu bar and dock of appearance preferences object"
+    },
+    {
+      "name": "set_dark_mode_of_appearance_preferences_object",
+      "description": "Set use dark menu bar and dock of appearance preferences object"
+    },
+    {
+      "name": "get_cd_and_dvd_preferences_of_application",
+      "description": "Get the preferences for the current user when a CD or DVD is inserted of application"
+    },
+    {
+      "name": "set_cd_and_dvd_preferences_of_application",
+      "description": "Set the preferences for the current user when a CD or DVD is inserted of application"
+    },
+    {
+      "name": "get_blank_cd_of_cd_and_dvd_preferences_object",
+      "description": "Get the blank CD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_blank_dvd_of_cd_and_dvd_preferences_object",
+      "description": "Get the blank DVD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_blank_bd_of_cd_and_dvd_preferences_object",
+      "description": "Get the blank BD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_music_cd_of_cd_and_dvd_preferences_object",
+      "description": "Get the music CD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_picture_cd_of_cd_and_dvd_preferences_object",
+      "description": "Get the picture CD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_video_dvd_of_cd_and_dvd_preferences_object",
+      "description": "Get the video DVD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_video_bd_of_cd_and_dvd_preferences_object",
+      "description": "Get the video BD insertion preference of CD and DVD preferences object"
+    },
+    {
+      "name": "get_custom_application_of_insertion_preference",
+      "description": "Get application to launch or activate on the insertion of media of insertion preference"
+    },
+    {
+      "name": "set_custom_application_of_insertion_preference",
+      "description": "Set application to launch or activate on the insertion of media of insertion preference"
+    },
+    {
+      "name": "get_custom_script_of_insertion_preference",
+      "description": "Get AppleScript to launch or activate on the insertion of media of insertion preference"
+    },
+    {
+      "name": "set_custom_script_of_insertion_preference",
+      "description": "Set AppleScript to launch or activate on the insertion of media of insertion preference"
+    },
+    {
+      "name": "get_insertion_action_of_insertion_preference",
+      "description": "Get action to perform on media insertion of insertion preference"
+    },
+    {
+      "name": "set_insertion_action_of_insertion_preference",
+      "description": "Set action to perform on media insertion of insertion preference"
+    },
+    {
+      "name": "get_current_desktop_of_application",
+      "description": "Get the primary desktop of application"
+    },
+    {
+      "name": "get_name_of_desktop",
+      "description": "Get name of the desktop"
+    },
+    {
+      "name": "get_id_of_desktop",
+      "description": "Get unique identifier of the desktop"
+    },
+    {
+      "name": "get_change_interval_of_desktop",
+      "description": "Get number of seconds to wait between changing the desktop picture"
+    },
+    {
+      "name": "set_change_interval_of_desktop",
+      "description": "Set number of seconds to wait between changing the desktop picture"
+    },
+    {
+      "name": "get_display_name_of_desktop",
+      "description": "Get name of display on which this desktop appears"
+    },
+    {
+      "name": "get_picture_of_desktop",
+      "description": "Get path to file used as desktop picture"
+    },
+    {
+      "name": "set_picture_of_desktop",
+      "description": "Set path to file used as desktop picture"
+    },
+    {
+      "name": "get_picture_rotation_of_desktop",
+      "description": "Get never, using interval, using login, after sleep of desktop"
+    },
+    {
+      "name": "set_picture_rotation_of_desktop",
+      "description": "Set never, using interval, using login, after sleep of desktop"
+    },
+    {
+      "name": "get_pictures_folder_of_desktop",
+      "description": "Get path to folder containing pictures for changing desktop background"
+    },
+    {
+      "name": "set_pictures_folder_of_desktop",
+      "description": "Set path to folder containing pictures for changing desktop background"
+    },
+    {
+      "name": "get_random_order_of_desktop",
+      "description": "Get turn on for random ordering of changing desktop pictures"
+    },
+    {
+      "name": "set_random_order_of_desktop",
+      "description": "Set turn on for random ordering of changing desktop pictures"
+    },
+    {
+      "name": "get_translucent_menu_bar_of_desktop",
+      "description": "Get indicates whether the menu bar is translucent of desktop"
+    },
+    {
+      "name": "set_translucent_menu_bar_of_desktop",
+      "description": "Set indicates whether the menu bar is translucent of desktop"
+    },
+    {
+      "name": "get_dynamic_style_of_desktop",
+      "description": "Get desktop picture dynamic style"
+    },
+    {
+      "name": "set_dynamic_style_of_desktop",
+      "description": "Set desktop picture dynamic style"
+    },
+    {
+      "name": "get_dock_preferences_of_application",
+      "description": "Get the preferences for the current user's dock of application"
+    },
+    {
+      "name": "set_dock_preferences_of_application",
+      "description": "Set the preferences for the current user's dock of application"
+    },
+    {
+      "name": "get_animate_of_dock_preferences_object",
+      "description": "Get is the animation of opening applications on or off? of dock preferences object"
+    },
+    {
+      "name": "set_animate_of_dock_preferences_object",
+      "description": "Set is the animation of opening applications on or off? of dock preferences object"
+    },
+    {
+      "name": "get_autohide_of_dock_preferences_object",
+      "description": "Get is autohiding the dock on or off? of dock preferences object"
+    },
+    {
+      "name": "set_autohide_of_dock_preferences_object",
+      "description": "Set is autohiding the dock on or off? of dock preferences object"
+    },
+    {
+      "name": "get_dock_size_of_dock_preferences_object",
+      "description": "Get size/height of the items (between 0.0 (minimum) and 1.0 (maximum)) of dock preferences object"
+    },
+    {
+      "name": "set_dock_size_of_dock_preferences_object",
+      "description": "Set size/height of the items (between 0.0 (minimum) and 1.0 (maximum)) of dock preferences object"
+    },
+    {
+      "name": "get_autohide_menu_bar_of_dock_preferences_object",
+      "description": "Get is autohiding the menu bar on or off? of dock preferences object"
+    },
+    {
+      "name": "set_autohide_menu_bar_of_dock_preferences_object",
+      "description": "Set is autohiding the menu bar on or off? of dock preferences object"
+    },
+    {
+      "name": "get_double_click_behavior_of_dock_preferences_object",
+      "description": "Get behaviour when double clicking window a title bar of dock preferences object"
+    },
+    {
+      "name": "set_double_click_behavior_of_dock_preferences_object",
+      "description": "Set behaviour when double clicking window a title bar of dock preferences object"
+    },
+    {
+      "name": "get_magnification_of_dock_preferences_object",
+      "description": "Get is magnification on or off? of dock preferences object"
+    },
+    {
+      "name": "set_magnification_of_dock_preferences_object",
+      "description": "Set is magnification on or off? of dock preferences object"
+    },
+    {
+      "name": "get_magnification_size_of_dock_preferences_object",
+      "description": "Get maximum magnification size when magnification is on (between 0.0 (minimum) and 1.0 (maximum)) of dock preferences object"
+    },
+    {
+      "name": "set_magnification_size_of_dock_preferences_object",
+      "description": "Set maximum magnification size when magnification is on (between 0.0 (minimum) and 1.0 (maximum)) of dock preferences object"
+    },
+    {
+      "name": "get_minimize_effect_of_dock_preferences_object",
+      "description": "Get minimization effect of dock preferences object"
+    },
+    {
+      "name": "set_minimize_effect_of_dock_preferences_object",
+      "description": "Set minimization effect of dock preferences object"
+    },
+    {
+      "name": "get_minimize_into_application_of_dock_preferences_object",
+      "description": "Get minimize window into its application? of dock preferences object"
+    },
+    {
+      "name": "set_minimize_into_application_of_dock_preferences_object",
+      "description": "Set minimize window into its application? of dock preferences object"
+    },
+    {
+      "name": "get_screen_edge_of_dock_preferences_object",
+      "description": "Get location on screen of dock preferences object"
+    },
+    {
+      "name": "set_screen_edge_of_dock_preferences_object",
+      "description": "Set location on screen of dock preferences object"
+    },
+    {
+      "name": "get_show_indicators_of_dock_preferences_object",
+      "description": "Get show indicators for open applications? of dock preferences object"
+    },
+    {
+      "name": "set_show_indicators_of_dock_preferences_object",
+      "description": "Set show indicators for open applications? of dock preferences object"
+    },
+    {
+      "name": "get_show_recents_of_dock_preferences_object",
+      "description": "Get show recent applications? of dock preferences object"
+    },
+    {
+      "name": "set_show_recents_of_dock_preferences_object",
+      "description": "Set show recent applications? of dock preferences object"
+    },
+    {
+      "name": "get_hidden_of_login_item",
+      "description": "Get Is the Login Item hidden when launched?"
+    },
+    {
+      "name": "set_hidden_of_login_item",
+      "description": "Set Is the Login Item hidden when launched?"
+    },
+    {
+      "name": "get_kind_of_login_item",
+      "description": "Get the file type of the Login Item"
+    },
+    {
+      "name": "get_name_of_login_item",
+      "description": "Get the name of the Login Item"
+    },
+    {
+      "name": "get_path_of_login_item",
+      "description": "Get the file system path to the Login Item"
+    },
+    {
+      "name": "connect_configuration",
+      "description": "connect a configuration or service (configuration input)"
+    },
+    {
+      "name": "connect_service",
+      "description": "connect a configuration or service (service input)"
+    },
+    {
+      "name": "disconnect_configuration",
+      "description": "disconnect a configuration or service (configuration input)"
+    },
+    {
+      "name": "disconnect_service",
+      "description": "disconnect a configuration or service (service input)"
+    },
+    {
+      "name": "get_network_preferences_of_application",
+      "description": "Get the preferences for the current user's network of application"
+    },
+    {
+      "name": "set_network_preferences_of_application",
+      "description": "Set the preferences for the current user's network of application"
+    },
+    {
+      "name": "get_account_name_of_configuration_of_service_of_location_of",
+      "description": "Get the name used to authenticate of configuration"
+    },
+    {
+      "name": "set_account_name_of_configuration_of_service_of_location_of",
+      "description": "Set the name used to authenticate of configuration"
+    },
+    {
+      "name": "get_connected_of_configuration_of_service_of_location_of",
+      "description": "Get Is the configuration connected?"
+    },
+    {
+      "name": "get_id_of_configuration_of_service_of_location_of_network",
+      "description": "Get the unique identifier for the configuration"
+    },
+    {
+      "name": "get_name_of_configuration_of_service_of_location_of_network",
+      "description": "Get the name of the configuration"
+    },
+    {
+      "name": "get_automatic_of_interface_of_network_preferences_object",
+      "description": "Get configure the interface speed, duplex, and mtu automatically?"
+    },
+    {
+      "name": "set_automatic_of_interface_of_network_preferences_object",
+      "description": "Set configure the interface speed, duplex, and mtu automatically?"
+    },
+    {
+      "name": "get_duplex_of_interface_of_network_preferences_object",
+      "description": "Get the duplex setting  half | full | full with flow control of interface"
+    },
+    {
+      "name": "set_duplex_of_interface_of_network_preferences_object",
+      "description": "Set the duplex setting  half | full | full with flow control of interface"
+    },
+    {
+      "name": "get_id_of_interface_of_network_preferences_object",
+      "description": "Get the unique identifier for the interface"
+    },
+    {
+      "name": "get_kind_of_interface_of_network_preferences_object",
+      "description": "Get the type of interface"
+    },
+    {
+      "name": "get_mac_address_of_interface_of_network_preferences_object",
+      "description": "Get the MAC address for the interface"
+    },
+    {
+      "name": "get_mtu_of_interface_of_network_preferences_object",
+      "description": "Get the packet size of interface"
+    },
+    {
+      "name": "set_mtu_of_interface_of_network_preferences_object",
+      "description": "Set the packet size of interface"
+    },
+    {
+      "name": "get_name_of_interface_of_network_preferences_object",
+      "description": "Get the name of the interface"
+    },
+    {
+      "name": "get_speed_of_interface_of_network_preferences_object",
+      "description": "Get ethernet speed 10 | 100 | 1000 of interface"
+    },
+    {
+      "name": "set_speed_of_interface_of_network_preferences_object",
+      "description": "Set ethernet speed 10 | 100 | 1000 of interface"
+    },
+    {
+      "name": "get_id_of_location_of_network_preferences_object",
+      "description": "Get the unique identifier for the location"
+    },
+    {
+      "name": "get_name_of_location_of_network_preferences_object",
+      "description": "Get the name of the location"
+    },
+    {
+      "name": "set_name_of_location_of_network_preferences_object",
+      "description": "Set the name of the location"
+    },
+    {
+      "name": "get_current_location_of_network_preferences_object",
+      "description": "Get the current location of network preferences object"
+    },
+    {
+      "name": "set_current_location_of_network_preferences_object",
+      "description": "Set the current location of network preferences object"
+    },
+    {
+      "name": "get_active_of_service_of_location_of_network_preferences_object",
+      "description": "Get Is the service active?"
+    },
+    {
+      "name": "get_current_configuration_of_service_of_location_of_network",
+      "description": "Get the currently selected configuration of service"
+    },
+    {
+      "name": "set_current_configuration_of_service_of_location_of_network",
+      "description": "Set the currently selected configuration of service"
+    },
+    {
+      "name": "get_id_of_service_of_location_of_network_preferences_object",
+      "description": "Get the unique identifier for the service"
+    },
+    {
+      "name": "get_interface_of_service_of_location_of_network_preferences",
+      "description": "Get the interface the service is built on"
+    },
+    {
+      "name": "get_kind_of_service_of_location_of_network_preferences_object",
+      "description": "Get the type of service"
+    },
+    {
+      "name": "get_name_of_service_of_location_of_network_preferences_object",
+      "description": "Get the name of the service"
+    },
+    {
+      "name": "set_name_of_service_of_location_of_network_preferences_object",
+      "description": "Set the name of the service"
+    },
+    {
+      "name": "start_screen_saver",
+      "description": "start the screen saver (screen saver input)"
+    },
+    {
+      "name": "start_screen_saver_preferences_object",
+      "description": "start the screen saver (screen saver preferences object input)"
+    },
+    {
+      "name": "stop_screen_saver",
+      "description": "stop the screen saver (screen saver input)"
+    },
+    {
+      "name": "stop_screen_saver_preferences_object",
+      "description": "stop the screen saver (screen saver preferences object input)"
+    },
+    {
+      "name": "get_current_screen_saver_of_application",
+      "description": "Get the currently selected screen saver of application"
+    },
+    {
+      "name": "set_current_screen_saver_of_application",
+      "description": "Set the currently selected screen saver of application"
+    },
+    {
+      "name": "get_screen_saver_preferences_of_application",
+      "description": "Get the preferences common to all screen savers of application"
+    },
+    {
+      "name": "set_screen_saver_preferences_of_application",
+      "description": "Set the preferences common to all screen savers of application"
+    },
+    {
+      "name": "get_displayed_name_of_screen_saver",
+      "description": "Get name of the screen saver module as displayed to the user"
+    },
+    {
+      "name": "get_name_of_screen_saver",
+      "description": "Get name of the screen saver module to be displayed"
+    },
+    {
+      "name": "get_path_of_screen_saver",
+      "description": "Get path to the screen saver module"
+    },
+    {
+      "name": "get_picture_display_style_of_screen_saver",
+      "description": "Get effect to use when displaying picture-based screen savers (slideshow, collage, or mosaic)"
+    },
+    {
+      "name": "set_picture_display_style_of_screen_saver",
+      "description": "Set effect to use when displaying picture-based screen savers (slideshow, collage, or mosaic)"
+    },
+    {
+      "name": "get_delay_interval_of_screen_saver_preferences_object",
+      "description": "Get number of seconds of idle time before the screen saver starts; zero for never of screen saver preferences object"
+    },
+    {
+      "name": "set_delay_interval_of_screen_saver_preferences_object",
+      "description": "Set number of seconds of idle time before the screen saver starts; zero for never of screen saver preferences object"
+    },
+    {
+      "name": "get_main_screen_only_of_screen_saver_preferences_object",
+      "description": "Get should the screen saver be shown only on the main screen? of screen saver preferences object"
+    },
+    {
+      "name": "set_main_screen_only_of_screen_saver_preferences_object",
+      "description": "Set should the screen saver be shown only on the main screen? of screen saver preferences object"
+    },
+    {
+      "name": "get_running_of_screen_saver_preferences_object",
+      "description": "Get is the screen saver running? of screen saver preferences object"
+    },
+    {
+      "name": "get_show_clock_of_screen_saver_preferences_object",
+      "description": "Get should a clock appear over the screen saver? of screen saver preferences object"
+    },
+    {
+      "name": "set_show_clock_of_screen_saver_preferences_object",
+      "description": "Set should a clock appear over the screen saver? of screen saver preferences object"
+    },
+    {
+      "name": "get_security_preferences_of_application",
+      "description": "Get a collection of security preferences of application"
+    },
+    {
+      "name": "set_security_preferences_of_application",
+      "description": "Set a collection of security preferences of application"
+    },
+    {
+      "name": "get_automatic_login_of_security_preferences_object",
+      "description": "Get Is automatic login allowed? of security preferences object"
+    },
+    {
+      "name": "set_automatic_login_of_security_preferences_object",
+      "description": "Set Is automatic login allowed? of security preferences object"
+    },
+    {
+      "name": "get_log_out_when_inactive_of_security_preferences_object",
+      "description": "Get Will the computer log out when inactive? of security preferences object"
+    },
+    {
+      "name": "set_log_out_when_inactive_of_security_preferences_object",
+      "description": "Set Will the computer log out when inactive? of security preferences object"
+    },
+    {
+      "name": "get_log_out_when_inactive_interval_of_security_preferences",
+      "description": "Get The interval of inactivity after which the computer will log out of security preferences object"
+    },
+    {
+      "name": "set_log_out_when_inactive_interval_of_security_preferences",
+      "description": "Set The interval of inactivity after which the computer will log out of security preferences object"
+    },
+    {
+      "name": "get_require_password_to_unlock_of_security_preferences_object",
+      "description": "Get Is a password required to unlock secure preferences? of security preferences object"
+    },
+    {
+      "name": "set_require_password_to_unlock_of_security_preferences_object",
+      "description": "Set Is a password required to unlock secure preferences? of security preferences object"
+    },
+    {
+      "name": "get_require_password_to_wake_of_security_preferences_object",
+      "description": "Get Is a password required to wake the computer from sleep or screen saver? of security preferences object"
+    },
+    {
+      "name": "set_require_password_to_wake_of_security_preferences_object",
+      "description": "Set Is a password required to wake the computer from sleep or screen saver? of security preferences object"
+    },
+    {
+      "name": "get_secure_virtual_memory_of_security_preferences_object",
+      "description": "Get Is secure virtual memory being used? of security preferences object"
+    },
+    {
+      "name": "set_secure_virtual_memory_of_security_preferences_object",
+      "description": "Set Is secure virtual memory being used? of security preferences object"
+    },
+    {
+      "name": "delete_for_disk",
+      "description": "Delete disk item(s)."
+    },
+    {
+      "name": "delete_for_alias_of_disk",
+      "description": "Delete alias item(s)."
+    },
+    {
+      "name": "delete_for_file_package_of_alias_of_disk",
+      "description": "Delete file package item(s)."
+    },
+    {
+      "name": "delete_for_folder_of_alias_of_disk",
+      "description": "Delete folder item(s)."
+    },
+    {
+      "name": "move_disk_item",
+      "description": "Move disk item(s) to a new location. (disk item input)"
+    },
+    {
+      "name": "move_disk_item",
+      "description": "Move disk item(s) to a new location. (disk item input)"
+    },
+    {
+      "name": "move_text",
+      "description": "Move disk item(s) to a new location. (text input)"
+    },
+    {
+      "name": "move_text",
+      "description": "Move disk item(s) to a new location. (text input)"
+    },
+    {
+      "name": "open_file",
+      "description": "Open disk item(s) with the appropriate application. (file input)"
+    },
+    {
+      "name": "open_text",
+      "description": "Open disk item(s) with the appropriate application. (text input)"
+    },
+    {
+      "name": "get_application_support_folder_of_application",
+      "description": "Get The Application Support folder"
+    },
+    {
+      "name": "get_applications_folder_of_application",
+      "description": "Get The user's Applications folder"
+    },
+    {
+      "name": "get_classic_domain_of_application",
+      "description": "Get the collection of folders belonging to the Classic System of application"
+    },
+    {
+      "name": "get_desktop_folder_of_application",
+      "description": "Get The user's Desktop folder of application"
+    },
+    {
+      "name": "get_desktop_pictures_folder_of_application",
+      "description": "Get The Desktop Pictures folder of application"
+    },
+    {
+      "name": "get_documents_folder_of_application",
+      "description": "Get The user's Documents folder of application"
+    },
+    {
+      "name": "get_downloads_folder_of_application",
+      "description": "Get The user's Downloads folder of application"
+    },
+    {
+      "name": "get_favorites_folder_of_application",
+      "description": "Get The user's Favorites folder of application"
+    },
+    {
+      "name": "get_folder_action_scripts_folder_of_application",
+      "description": "Get The user's Folder Action Scripts folder of application"
+    },
+    {
+      "name": "get_fonts_folder_of_application",
+      "description": "Get The Fonts folder of application"
+    },
+    {
+      "name": "get_home_folder_of_application",
+      "description": "Get The Home folder of the currently logged in user of application"
+    },
+    {
+      "name": "get_library_folder_of_application",
+      "description": "Get The Library folder of application"
+    },
+    {
+      "name": "get_local_domain_of_application",
+      "description": "Get the collection of folders residing on the Local machine of application"
+    },
+    {
+      "name": "get_movies_folder_of_application",
+      "description": "Get The user's Movies folder of application"
+    },
+    {
+      "name": "get_music_folder_of_application",
+      "description": "Get The user's Music folder of application"
+    },
+    {
+      "name": "get_network_domain_of_application",
+      "description": "Get the collection of folders residing on the Network of application"
+    },
+    {
+      "name": "get_pictures_folder_of_application",
+      "description": "Get The user's Pictures folder of application"
+    },
+    {
+      "name": "get_preferences_folder_of_application",
+      "description": "Get The user's Preferences folder of application"
+    },
+    {
+      "name": "get_public_folder_of_application",
+      "description": "Get The user's Public folder of application"
+    },
+    {
+      "name": "get_scripting_additions_folder_of_application",
+      "description": "Get The Scripting Additions folder of application"
+    },
+    {
+      "name": "get_scripts_folder_of_application",
+      "description": "Get The user's Scripts folder of application"
+    },
+    {
+      "name": "get_shared_documents_folder_of_application",
+      "description": "Get The Shared Documents folder of application"
+    },
+    {
+      "name": "get_sites_folder_of_application",
+      "description": "Get The user's Sites folder of application"
+    },
+    {
+      "name": "get_speakable_items_folder_of_application",
+      "description": "Get The Speakable Items folder of application"
+    },
+    {
+      "name": "get_startup_disk_of_application",
+      "description": "Get the disk from which Mac OS X was loaded of application"
+    },
+    {
+      "name": "get_system_domain_of_application",
+      "description": "Get the collection of folders belonging to the System of application"
+    },
+    {
+      "name": "get_temporary_items_folder_of_application",
+      "description": "Get The Temporary Items folder of application"
+    },
+    {
+      "name": "get_trash_of_application",
+      "description": "Get The user's Trash folder of application"
+    },
+    {
+      "name": "get_user_domain_of_application",
+      "description": "Get the collection of folders belonging to the User of application"
+    },
+    {
+      "name": "get_utilities_folder_of_application",
+      "description": "Get The Utilities folder of application"
+    },
+    {
+      "name": "get_workflows_folder_of_application",
+      "description": "Get The Automator Workflows folder of application"
+    },
+    {
+      "name": "get_creator_type_of_alias_of_disk",
+      "description": "Get the OSType identifying the application that created the alias"
+    },
+    {
+      "name": "set_creator_type_of_alias_of_disk",
+      "description": "Set the OSType identifying the application that created the alias"
+    },
+    {
+      "name": "get_default_application_of_alias_of_disk",
+      "description": "Get the application that will launch if the alias is opened"
+    },
+    {
+      "name": "set_default_application_of_alias_of_disk",
+      "description": "Set the application that will launch if the alias is opened"
+    },
+    {
+      "name": "get_file_type_of_alias_of_disk",
+      "description": "Get the OSType identifying the type of data contained in the alias"
+    },
+    {
+      "name": "set_file_type_of_alias_of_disk",
+      "description": "Set the OSType identifying the type of data contained in the alias"
+    },
+    {
+      "name": "get_kind_of_alias_of_disk",
+      "description": "Get The kind of alias, as shown in Finder"
+    },
+    {
+      "name": "get_product_version_of_alias_of_disk",
+      "description": "Get the version of the product (visible at the top of the \"Get Info\" window) of alias"
+    },
+    {
+      "name": "get_short_version_of_alias_of_disk",
+      "description": "Get the short version of the application bundle referenced by the alias"
+    },
+    {
+      "name": "get_stationery_of_alias_of_disk",
+      "description": "Get Is the alias a stationery pad?"
+    },
+    {
+      "name": "set_stationery_of_alias_of_disk",
+      "description": "Set Is the alias a stationery pad?"
+    },
+    {
+      "name": "get_type_identifier_of_alias_of_disk",
+      "description": "Get The type identifier of the alias"
+    },
+    {
+      "name": "get_version_of_alias_of_disk",
+      "description": "Get the version of the application bundle referenced by the alias (visible at the bottom of the \"Get Info\" window)"
+    },
+    {
+      "name": "get_apple_menu_folder_of_classic_domain_object",
+      "description": "Get The Apple Menu Items folder of Classic domain object"
+    },
+    {
+      "name": "get_control_panels_folder_of_classic_domain_object",
+      "description": "Get The Control Panels folder of Classic domain object"
+    },
+    {
+      "name": "get_control_strip_modules_folder_of_classic_domain_object",
+      "description": "Get The Control Strip Modules folder of Classic domain object"
+    },
+    {
+      "name": "get_desktop_folder_of_classic_domain_object",
+      "description": "Get The Classic Desktop folder of Classic domain object"
+    },
+    {
+      "name": "get_extensions_folder_of_classic_domain_object",
+      "description": "Get The Extensions folder of Classic domain object"
+    },
+    {
+      "name": "get_fonts_folder_of_classic_domain_object",
+      "description": "Get The Fonts folder of Classic domain object"
+    },
+    {
+      "name": "get_launcher_items_folder_of_classic_domain_object",
+      "description": "Get The Launcher Items folder of Classic domain object"
+    },
+    {
+      "name": "get_preferences_folder_of_classic_domain_object",
+      "description": "Get The Classic Preferences folder of Classic domain object"
+    },
+    {
+      "name": "get_shutdown_folder_of_classic_domain_object",
+      "description": "Get The Shutdown Items folder of Classic domain object"
+    },
+    {
+      "name": "get_startup_items_folder_of_classic_domain_object",
+      "description": "Get The StartupItems folder of Classic domain object"
+    },
+    {
+      "name": "get_system_folder_of_classic_domain_object",
+      "description": "Get The System folder of Classic domain object"
+    },
+    {
+      "name": "get_capacity_of_disk",
+      "description": "Get the total number of bytes (free or used) on the disk"
+    },
+    {
+      "name": "get_ejectable_of_disk",
+      "description": "Get Can the media be ejected (floppies, CD's, and so on)? of disk"
+    },
+    {
+      "name": "get_format_of_disk",
+      "description": "Get the file system format of this disk"
+    },
+    {
+      "name": "get_free_space_of_disk",
+      "description": "Get the number of free bytes left on the disk"
+    },
+    {
+      "name": "get_ignore_privileges_of_disk",
+      "description": "Get Ignore permissions on this disk?"
+    },
+    {
+      "name": "set_ignore_privileges_of_disk",
+      "description": "Set Ignore permissions on this disk?"
+    },
+    {
+      "name": "get_local_volume_of_disk",
+      "description": "Get Is the media a local volume (as opposed to a file server)? of disk"
+    },
+    {
+      "name": "get_server_of_disk",
+      "description": "Get the server on which the disk resides, AFP volumes only"
+    },
+    {
+      "name": "get_startup_of_disk",
+      "description": "Get Is this disk the boot disk?"
+    },
+    {
+      "name": "get_zone_of_disk",
+      "description": "Get the zone in which the disk's server resides, AFP volumes only"
+    },
+    {
+      "name": "get_busy_status_of_disk_item_of_alias_of_disk",
+      "description": "Get Is the disk item busy?"
+    },
+    {
+      "name": "get_container_of_disk_item_of_alias_of_disk",
+      "description": "Get the folder or disk which has this disk item as an element"
+    },
+    {
+      "name": "get_creation_date_of_disk_item_of_alias_of_disk",
+      "description": "Get the date on which the disk item was created"
+    },
+    {
+      "name": "get_displayed_name_of_disk_item_of_alias_of_disk",
+      "description": "Get the name of the disk item as displayed in the User Interface"
+    },
+    {
+      "name": "get_id_of_disk_item_of_alias_of_disk",
+      "description": "Get the unique ID of the disk item"
+    },
+    {
+      "name": "get_modification_date_of_disk_item_of_alias_of_disk",
+      "description": "Get the date on which the disk item was last modified"
+    },
+    {
+      "name": "set_modification_date_of_disk_item_of_alias_of_disk",
+      "description": "Set the date on which the disk item was last modified"
+    },
+    {
+      "name": "get_name_of_disk_item_of_alias_of_disk",
+      "description": "Get the name of the disk item"
+    },
+    {
+      "name": "set_name_of_disk_item_of_alias_of_disk",
+      "description": "Set the name of the disk item"
+    },
+    {
+      "name": "get_name_extension_of_disk_item_of_alias_of_disk",
+      "description": "Get the extension portion of the name of disk item"
+    },
+    {
+      "name": "get_package_folder_of_disk_item_of_alias_of_disk",
+      "description": "Get Is the disk item a package?"
+    },
+    {
+      "name": "get_path_of_disk_item_of_alias_of_disk",
+      "description": "Get the file system path of the disk item"
+    },
+    {
+      "name": "get_physical_size_of_disk_item_of_alias_of_disk",
+      "description": "Get the actual space used by the disk item on disk"
+    },
+    {
+      "name": "get_posix_path_of_disk_item_of_alias_of_disk",
+      "description": "Get the POSIX file system path of the disk item"
+    },
+    {
+      "name": "get_size_of_disk_item_of_alias_of_disk",
+      "description": "Get the logical size of the disk item"
+    },
+    {
+      "name": "get_url_of_disk_item_of_alias_of_disk",
+      "description": "Get the URL of the disk item"
+    },
+    {
+      "name": "get_visible_of_disk_item_of_alias_of_disk",
+      "description": "Get Is the disk item visible?"
+    },
+    {
+      "name": "set_visible_of_disk_item_of_alias_of_disk",
+      "description": "Set Is the disk item visible?"
+    },
+    {
+      "name": "get_volume_of_disk_item_of_alias_of_disk",
+      "description": "Get the volume on which the disk item resides"
+    },
+    {
+      "name": "get_application_support_folder_of_domain",
+      "description": "Get The Application Support folder of domain"
+    },
+    {
+      "name": "get_applications_folder_of_domain",
+      "description": "Get The Applications folder of domain"
+    },
+    {
+      "name": "get_desktop_pictures_folder_of_domain",
+      "description": "Get The Desktop Pictures folder of domain"
+    },
+    {
+      "name": "get_folder_action_scripts_folder_of_domain",
+      "description": "Get The Folder Action Scripts folder of domain"
+    },
+    {
+      "name": "get_fonts_folder_of_domain",
+      "description": "Get The Fonts folder of domain"
+    },
+    {
+      "name": "get_id_of_domain",
+      "description": "Get the unique identifier of the domain"
+    },
+    {
+      "name": "get_library_folder_of_domain",
+      "description": "Get The Library folder of domain"
+    },
+    {
+      "name": "get_name_of_domain",
+      "description": "Get the name of the domain"
+    },
+    {
+      "name": "get_preferences_folder_of_domain",
+      "description": "Get The Preferences folder of domain"
+    },
+    {
+      "name": "get_scripting_additions_folder_of_domain",
+      "description": "Get The Scripting Additions folder of domain"
+    },
+    {
+      "name": "get_scripts_folder_of_domain",
+      "description": "Get The Scripts folder of domain"
+    },
+    {
+      "name": "get_shared_documents_folder_of_domain",
+      "description": "Get The Shared Documents folder of domain"
+    },
+    {
+      "name": "get_speakable_items_folder_of_domain",
+      "description": "Get The Speakable Items folder of domain"
+    },
+    {
+      "name": "get_utilities_folder_of_domain",
+      "description": "Get The Utilities folder of domain"
+    },
+    {
+      "name": "get_workflows_folder_of_domain",
+      "description": "Get The Automator Workflows folder of domain"
+    },
+    {
+      "name": "get_creator_type_of_file_of_alias_of_disk",
+      "description": "Get the OSType identifying the application that created the file"
+    },
+    {
+      "name": "set_creator_type_of_file_of_alias_of_disk",
+      "description": "Set the OSType identifying the application that created the file"
+    },
+    {
+      "name": "get_default_application_of_file_of_alias_of_disk",
+      "description": "Get the application that will launch if the file is opened"
+    },
+    {
+      "name": "set_default_application_of_file_of_alias_of_disk",
+      "description": "Set the application that will launch if the file is opened"
+    },
+    {
+      "name": "get_file_type_of_file_of_alias_of_disk",
+      "description": "Get the OSType identifying the type of data contained in the file"
+    },
+    {
+      "name": "set_file_type_of_file_of_alias_of_disk",
+      "description": "Set the OSType identifying the type of data contained in the file"
+    },
+    {
+      "name": "get_kind_of_file_of_alias_of_disk",
+      "description": "Get The kind of file, as shown in Finder"
+    },
+    {
+      "name": "get_product_version_of_file_of_alias_of_disk",
+      "description": "Get the version of the product (visible at the top of the \"Get Info\" window) of file"
+    },
+    {
+      "name": "get_short_version_of_file_of_alias_of_disk",
+      "description": "Get the short version of the file"
+    },
+    {
+      "name": "get_stationery_of_file_of_alias_of_disk",
+      "description": "Get Is the file a stationery pad?"
+    },
+    {
+      "name": "set_stationery_of_file_of_alias_of_disk",
+      "description": "Set Is the file a stationery pad?"
+    },
+    {
+      "name": "get_type_identifier_of_file_of_alias_of_disk",
+      "description": "Get The type identifier of the file"
+    },
+    {
+      "name": "get_version_of_file_of_alias_of_disk",
+      "description": "Get the version of the file (visible at the bottom of the \"Get Info\" window)"
+    },
+    {
+      "name": "get_desktop_folder_of_user_domain_object",
+      "description": "Get The user's Desktop folder of user domain object"
+    },
+    {
+      "name": "get_documents_folder_of_user_domain_object",
+      "description": "Get The user's Documents folder of user domain object"
+    },
+    {
+      "name": "get_downloads_folder_of_user_domain_object",
+      "description": "Get The user's Downloads folder of user domain object"
+    },
+    {
+      "name": "get_favorites_folder_of_user_domain_object",
+      "description": "Get The user's Favorites folder of user domain object"
+    },
+    {
+      "name": "get_home_folder_of_user_domain_object",
+      "description": "Get The user's Home folder of user domain object"
+    },
+    {
+      "name": "get_movies_folder_of_user_domain_object",
+      "description": "Get The user's Movies folder of user domain object"
+    },
+    {
+      "name": "get_music_folder_of_user_domain_object",
+      "description": "Get The user's Music folder of user domain object"
+    },
+    {
+      "name": "get_pictures_folder_of_user_domain_object",
+      "description": "Get The user's Pictures folder of user domain object"
+    },
+    {
+      "name": "get_public_folder_of_user_domain_object",
+      "description": "Get The user's Public folder of user domain object"
+    },
+    {
+      "name": "get_sites_folder_of_user_domain_object",
+      "description": "Get The user's Sites folder of user domain object"
+    },
+    {
+      "name": "get_temporary_items_folder_of_user_domain_object",
+      "description": "Get The Temporary Items folder of user domain object"
+    },
+    {
+      "name": "log_out",
+      "description": "Log out the current user"
+    },
+    {
+      "name": "restart",
+      "description": "Restart the computer"
+    },
+    {
+      "name": "shut_down",
+      "description": "Shut Down the computer"
+    },
+    {
+      "name": "sleep",
+      "description": "Put the computer to sleep"
+    },
+    {
+      "name": "click_for_window_of_process",
+      "description": "cause the target window of process to behave as if the UI element were clicked"
+    },
+    {
+      "name": "click_for_process",
+      "description": "cause the target process to behave as if the UI element were clicked"
+    },
+    {
+      "name": "click_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were clicked"
+    },
+    {
+      "name": "key_code",
+      "description": "cause the target process to behave as if key codes were entered"
+    },
+    {
+      "name": "keystroke",
+      "description": "cause the target process to behave as if keystrokes were entered"
+    },
+    {
+      "name": "perform_for_action_of_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the action were applied to its UI element"
+    },
+    {
+      "name": "select_for_window_of_process",
+      "description": "set the selected property of the window of process"
+    },
+    {
+      "name": "select_for_ui_element_of_window_of_process",
+      "description": "set the selected property of the UI element"
+    },
+    {
+      "name": "get_ui_elements_enabled_of_application",
+      "description": "Get Are UI element events currently being processed? of application"
+    },
+    {
+      "name": "get_description_of_action_of_ui_element_of_window_of_process",
+      "description": "Get what the action does"
+    },
+    {
+      "name": "get_name_of_action_of_ui_element_of_window_of_process",
+      "description": "Get the name of the action"
+    },
+    {
+      "name": "get_application_file_of_application_process",
+      "description": "Get a reference to the application file from which this process was launched of application process"
+    },
+    {
+      "name": "get_name_of_attribute_of_ui_element_of_window_of_process",
+      "description": "Get the name of the attribute"
+    },
+    {
+      "name": "get_settable_of_attribute_of_ui_element_of_window_of_process",
+      "description": "Get Can the attribute be set?"
+    },
+    {
+      "name": "get_value_of_attribute_of_ui_element_of_window_of_process",
+      "description": "Get the current value of the attribute"
+    },
+    {
+      "name": "set_value_of_attribute_of_ui_element_of_window_of_process",
+      "description": "Set the current value of the attribute"
+    },
+    {
+      "name": "get_desk_accessory_file_of_desk_accessory_process",
+      "description": "Get a reference to the desk accessory file from which this process was launched of desk accessory process"
+    },
+    {
+      "name": "get_accepts_high_level_events_of_process",
+      "description": "Get Is the process high-level event aware (accepts open application, open document, print document, and quit)?"
+    },
+    {
+      "name": "get_accepts_remote_events_of_process",
+      "description": "Get Does the process accept remote events?"
+    },
+    {
+      "name": "get_architecture_of_process",
+      "description": "Get the architecture in which the process is running"
+    },
+    {
+      "name": "get_background_only_of_process",
+      "description": "Get Does the process run exclusively in the background?"
+    },
+    {
+      "name": "get_bundle_identifier_of_process",
+      "description": "Get the bundle identifier of the process' application file"
+    },
+    {
+      "name": "get_classic_of_process",
+      "description": "Get Is the process running in the Classic environment?"
+    },
+    {
+      "name": "get_creator_type_of_process",
+      "description": "Get the OSType of the creator of the process (the signature)"
+    },
+    {
+      "name": "get_displayed_name_of_process",
+      "description": "Get the name of the file from which the process was launched, as displayed in the User Interface"
+    },
+    {
+      "name": "get_file_of_process",
+      "description": "Get the file from which the process was launched"
+    },
+    {
+      "name": "get_file_type_of_process",
+      "description": "Get the OSType of the file type of the process"
+    },
+    {
+      "name": "get_frontmost_of_process",
+      "description": "Get Is the process the frontmost process"
+    },
+    {
+      "name": "set_frontmost_of_process",
+      "description": "Set Is the process the frontmost process"
+    },
+    {
+      "name": "get_has_scripting_terminology_of_process",
+      "description": "Get Does the process have a scripting terminology, i.e., can it be scripted?"
+    },
+    {
+      "name": "get_id_of_process",
+      "description": "Get The unique identifier of the process"
+    },
+    {
+      "name": "get_name_of_process",
+      "description": "Get the name of the process"
+    },
+    {
+      "name": "get_partition_space_used_of_process",
+      "description": "Get the number of bytes currently used in the process' partition"
+    },
+    {
+      "name": "get_short_name_of_process",
+      "description": "Get the short name of the file from which the process was launched"
+    },
+    {
+      "name": "get_total_partition_size_of_process",
+      "description": "Get the size of the partition with which the process was launched"
+    },
+    {
+      "name": "get_unix_id_of_process",
+      "description": "Get The Unix process identifier of a process running in the native environment, or -1 for a process running in the Classic environment"
+    },
+    {
+      "name": "get_visible_of_process",
+      "description": "Get Is the process' layer visible?"
+    },
+    {
+      "name": "set_visible_of_process",
+      "description": "Set Is the process' layer visible?"
+    },
+    {
+      "name": "get_accessibility_description_of_ui_element_of_window_of_process",
+      "description": "Get a more complete description of the UI element and its capabilities"
+    },
+    {
+      "name": "get_class_of_ui_element_of_window_of_process",
+      "description": "Get the class of the UI Element, which identifies it function"
+    },
+    {
+      "name": "get_description_of_ui_element_of_window_of_process",
+      "description": "Get the accessibility description, if available; otherwise, the role description of UI element"
+    },
+    {
+      "name": "get_enabled_of_ui_element_of_window_of_process",
+      "description": "Get Is the UI element enabled? ( Does it accept clicks? )"
+    },
+    {
+      "name": "get_entire_contents_of_ui_element_of_window_of_process",
+      "description": "Get a list of every UI element contained in this UI element and its child UI elements, to the limits of the tree"
+    },
+    {
+      "name": "get_focused_of_ui_element_of_window_of_process",
+      "description": "Get Is the focus on this UI element?"
+    },
+    {
+      "name": "set_focused_of_ui_element_of_window_of_process",
+      "description": "Set Is the focus on this UI element?"
+    },
+    {
+      "name": "get_help_of_ui_element_of_window_of_process",
+      "description": "Get an elaborate description of the UI element and its capabilities"
+    },
+    {
+      "name": "get_maximum_value_of_ui_element_of_window_of_process",
+      "description": "Get the maximum value that the UI element can take on"
+    },
+    {
+      "name": "get_minimum_value_of_ui_element_of_window_of_process",
+      "description": "Get the minimum value that the UI element can take on"
+    },
+    {
+      "name": "get_name_of_ui_element_of_window_of_process",
+      "description": "Get the name of the UI Element, which identifies it within its container"
+    },
+    {
+      "name": "get_orientation_of_ui_element_of_window_of_process",
+      "description": "Get the orientation of the UI element"
+    },
+    {
+      "name": "get_position_of_ui_element_of_window_of_process",
+      "description": "Get the position of the UI element"
+    },
+    {
+      "name": "set_position_of_ui_element_of_window_of_process",
+      "description": "Set the position of the UI element"
+    },
+    {
+      "name": "get_role_of_ui_element_of_window_of_process",
+      "description": "Get an encoded description of the UI element and its capabilities"
+    },
+    {
+      "name": "get_role_description_of_ui_element_of_window_of_process",
+      "description": "Get a more complete description of the UI element's role"
+    },
+    {
+      "name": "get_selected_of_ui_element_of_window_of_process",
+      "description": "Get Is the UI element selected?"
+    },
+    {
+      "name": "set_selected_of_ui_element_of_window_of_process",
+      "description": "Set Is the UI element selected?"
+    },
+    {
+      "name": "get_size_of_ui_element_of_window_of_process",
+      "description": "Get the size of the UI element"
+    },
+    {
+      "name": "set_size_of_ui_element_of_window_of_process",
+      "description": "Set the size of the UI element"
+    },
+    {
+      "name": "get_subrole_of_ui_element_of_window_of_process",
+      "description": "Get an encoded description of the UI element and its capabilities"
+    },
+    {
+      "name": "get_title_of_ui_element_of_window_of_process",
+      "description": "Get the title of the UI element as it appears on the screen"
+    },
+    {
+      "name": "get_value_of_ui_element_of_window_of_process",
+      "description": "Get the current value of the UI element"
+    },
+    {
+      "name": "set_value_of_ui_element_of_window_of_process",
+      "description": "Set the current value of the UI element"
+    },
+    {
+      "name": "get_accessibility_description_of_window_of_process",
+      "description": "Get a more complete description of the window and its capabilities"
+    },
+    {
+      "name": "get_class_of_window_of_process",
+      "description": "Get the class of the window, which identifies its function"
+    },
+    {
+      "name": "get_description_of_window_of_process",
+      "description": "Get the accessibility description, if available; otherwise, the role description of window"
+    },
+    {
+      "name": "get_enabled_of_window_of_process",
+      "description": "Get Is the window enabled? ( Does it accept clicks? )"
+    },
+    {
+      "name": "get_entire_contents_of_window_of_process",
+      "description": "Get a list of every UI element contained in this window and its child UI elements, to the limits of the tree"
+    },
+    {
+      "name": "get_focused_of_window_of_process",
+      "description": "Get Is the focus on this window?"
+    },
+    {
+      "name": "set_focused_of_window_of_process",
+      "description": "Set Is the focus on this window?"
+    },
+    {
+      "name": "get_help_of_window_of_process",
+      "description": "Get an elaborate description of the window and its capabilities"
+    },
+    {
+      "name": "get_maximum_value_of_window_of_process",
+      "description": "Get the maximum value that the UI element can take on of window"
+    },
+    {
+      "name": "get_minimum_value_of_window_of_process",
+      "description": "Get the minimum value that the UI element can take on of window"
+    },
+    {
+      "name": "get_orientation_of_window_of_process",
+      "description": "Get the orientation of the window"
+    },
+    {
+      "name": "get_position_of_window_of_process",
+      "description": "Get the position of the window"
+    },
+    {
+      "name": "set_position_of_window_of_process",
+      "description": "Set the position of the window"
+    },
+    {
+      "name": "get_role_of_window_of_process",
+      "description": "Get an encoded description of the window and its capabilities"
+    },
+    {
+      "name": "get_role_description_of_window_of_process",
+      "description": "Get a more complete description of the window's role"
+    },
+    {
+      "name": "get_selected_of_window_of_process",
+      "description": "Get Is the window selected?"
+    },
+    {
+      "name": "set_selected_of_window_of_process",
+      "description": "Set Is the window selected?"
+    },
+    {
+      "name": "get_size_of_window_of_process",
+      "description": "Get the size of the window"
+    },
+    {
+      "name": "set_size_of_window_of_process",
+      "description": "Set the size of the window"
+    },
+    {
+      "name": "get_subrole_of_window_of_process",
+      "description": "Get an encoded description of the window and its capabilities"
+    },
+    {
+      "name": "get_title_of_window_of_process",
+      "description": "Get the title of the window as it appears on the screen"
+    },
+    {
+      "name": "get_value_of_window_of_process",
+      "description": "Get the current value of the window"
+    },
+    {
+      "name": "set_value_of_window_of_process",
+      "description": "Set the current value of the window"
+    },
+    {
+      "name": "get_kind_of_property_list_item",
+      "description": "Get the kind of data stored in the property list item: boolean/data/date/list/number/record/string"
+    },
+    {
+      "name": "get_name_of_property_list_item",
+      "description": "Get the name of the property list item ( if any )"
+    },
+    {
+      "name": "get_text_of_property_list_item",
+      "description": "Get the text representation of the property list data of property list item"
+    },
+    {
+      "name": "set_text_of_property_list_item",
+      "description": "Set the text representation of the property list data of property list item"
+    },
+    {
+      "name": "get_value_of_property_list_item",
+      "description": "Get the value of the property list item"
+    },
+    {
+      "name": "set_value_of_property_list_item",
+      "description": "Set the value of the property list item"
+    },
+    {
+      "name": "get_name_of_xml_attribute_of_xml_element_of_xml_data",
+      "description": "Get the name of the XML attribute"
+    },
+    {
+      "name": "get_value_of_xml_attribute_of_xml_element_of_xml_data",
+      "description": "Get the value of the XML attribute"
+    },
+    {
+      "name": "set_value_of_xml_attribute_of_xml_element_of_xml_data",
+      "description": "Set the value of the XML attribute"
+    },
+    {
+      "name": "get_id_of_xml_data",
+      "description": "Get the unique identifier of the XML data"
+    },
+    {
+      "name": "get_name_of_xml_data",
+      "description": "Get the name of the XML data"
+    },
+    {
+      "name": "set_name_of_xml_data",
+      "description": "Set the name of the XML data"
+    },
+    {
+      "name": "get_text_of_xml_data",
+      "description": "Get the text representation of the XML data"
+    },
+    {
+      "name": "set_text_of_xml_data",
+      "description": "Set the text representation of the XML data"
+    },
+    {
+      "name": "get_id_of_xml_element_of_xml_data",
+      "description": "Get the unique identifier of the XML element"
+    },
+    {
+      "name": "get_name_of_xml_element_of_xml_data",
+      "description": "Get the name of the XML element"
+    },
+    {
+      "name": "get_value_of_xml_element_of_xml_data",
+      "description": "Get the value of the XML element"
+    },
+    {
+      "name": "set_value_of_xml_element_of_xml_data",
+      "description": "Set the value of the XML element"
+    },
+    {
+      "name": "get_copies_of_print_settings",
+      "description": "Get the number of copies of a document to be printed of print settings"
+    },
+    {
+      "name": "set_copies_of_print_settings",
+      "description": "Set the number of copies of a document to be printed of print settings"
+    },
+    {
+      "name": "get_collating_of_print_settings",
+      "description": "Get Should printed copies be collated? of print settings"
+    },
+    {
+      "name": "set_collating_of_print_settings",
+      "description": "Set Should printed copies be collated? of print settings"
+    },
+    {
+      "name": "get_starting_page_of_print_settings",
+      "description": "Get the first page of the document to be printed of print settings"
+    },
+    {
+      "name": "set_starting_page_of_print_settings",
+      "description": "Set the first page of the document to be printed of print settings"
+    },
+    {
+      "name": "get_ending_page_of_print_settings",
+      "description": "Get the last page of the document to be printed of print settings"
+    },
+    {
+      "name": "set_ending_page_of_print_settings",
+      "description": "Set the last page of the document to be printed of print settings"
+    },
+    {
+      "name": "get_pages_across_of_print_settings",
+      "description": "Get number of logical pages laid across a physical page of print settings"
+    },
+    {
+      "name": "set_pages_across_of_print_settings",
+      "description": "Set number of logical pages laid across a physical page of print settings"
+    },
+    {
+      "name": "get_pages_down_of_print_settings",
+      "description": "Get number of logical pages laid out down a physical page of print settings"
+    },
+    {
+      "name": "set_pages_down_of_print_settings",
+      "description": "Set number of logical pages laid out down a physical page of print settings"
+    },
+    {
+      "name": "get_requested_print_time_of_print_settings",
+      "description": "Get the time at which the desktop printer should print the document of print settings"
+    },
+    {
+      "name": "set_requested_print_time_of_print_settings",
+      "description": "Set the time at which the desktop printer should print the document of print settings"
+    },
+    {
+      "name": "get_error_handling_of_print_settings",
+      "description": "Get how errors are handled of print settings"
+    },
+    {
+      "name": "set_error_handling_of_print_settings",
+      "description": "Set how errors are handled of print settings"
+    },
+    {
+      "name": "get_fax_number_of_print_settings",
+      "description": "Get for fax number of print settings"
+    },
+    {
+      "name": "set_fax_number_of_print_settings",
+      "description": "Set for fax number of print settings"
+    },
+    {
+      "name": "get_target_printer_of_print_settings",
+      "description": "Get for target printer of print settings"
+    },
+    {
+      "name": "set_target_printer_of_print_settings",
+      "description": "Set for target printer of print settings"
+    },
+    {
+      "name": "attach_action_to",
+      "description": "Attach an action to a folder"
+    },
+    {
+      "name": "attached_scripts",
+      "description": "List the actions attached to a folder"
+    },
+    {
+      "name": "cancel_for_window_of_process",
+      "description": "cause the target process to behave as if the window of process were cancelled"
+    },
+    {
+      "name": "cancel_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were cancelled"
+    },
+    {
+      "name": "confirm_for_window_of_process",
+      "description": "cause the target process to behave as if the window of process were confirmed"
+    },
+    {
+      "name": "confirm_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were confirmed"
+    },
+    {
+      "name": "decrement_for_window_of_process",
+      "description": "cause the target process to behave as if the window of process were decremented"
+    },
+    {
+      "name": "decrement_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were decremented"
+    },
+    {
+      "name": "do_folder_action",
+      "description": "Send a folder action code to a folder action script"
+    },
+    {
+      "name": "edit_action_of",
+      "description": "Edit an action of a folder"
+    },
+    {
+      "name": "increment_for_window_of_process",
+      "description": "cause the target process to behave as if the window of process were incremented"
+    },
+    {
+      "name": "increment_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were incremented"
+    },
+    {
+      "name": "key_down",
+      "description": "cause the target process to behave as if keys were held down"
+    },
+    {
+      "name": "key_up",
+      "description": "cause the target process to behave as if keys were released"
+    },
+    {
+      "name": "pick_for_window_of_process",
+      "description": "cause the target process to behave as if the window of process were picked"
+    },
+    {
+      "name": "pick_for_ui_element_of_window_of_process",
+      "description": "cause the target process to behave as if the UI element were picked"
+    },
+    {
+      "name": "remove_action_from",
+      "description": "Remove a folder action from a folder"
+    },
+    {
+      "name": "get_scripting_definition_of_application",
+      "description": "Get The scripting definition of the System Events application"
+    },
+    {
+      "name": "get_name_of_scripting_class_of_scripting_suite_of_scripting",
+      "description": "Get The name of the class of scripting class"
+    },
+    {
+      "name": "get_id_of_scripting_class_of_scripting_suite_of_scripting",
+      "description": "Get The unique identifier of the class of scripting class"
+    },
+    {
+      "name": "get_description_of_scripting_class_of_scripting_suite_of",
+      "description": "Get The description of the class of scripting class"
+    },
+    {
+      "name": "get_hidden_of_scripting_class_of_scripting_suite_of_scripting",
+      "description": "Get Is the class hidden? of scripting class"
+    },
+    {
+      "name": "get_plural_name_of_scripting_class_of_scripting_suite_of",
+      "description": "Get The plural name of the class of scripting class"
+    },
+    {
+      "name": "get_suite_name_of_scripting_class_of_scripting_suite_of",
+      "description": "Get The name of the suite to which this class belongs of scripting class"
+    },
+    {
+      "name": "get_superclass_of_scripting_class_of_scripting_suite_of",
+      "description": "Get The class from which this class inherits of scripting class"
+    },
+    {
+      "name": "get_name_of_scripting_command_of_scripting_suite_of_scripting",
+      "description": "Get The name of the command of scripting command"
+    },
+    {
+      "name": "get_id_of_scripting_command_of_scripting_suite_of_scripting",
+      "description": "Get The unique identifier of the command of scripting command"
+    },
+    {
+      "name": "get_description_of_scripting_command_of_scripting_suite_of",
+      "description": "Get The description of the command of scripting command"
+    },
+    {
+      "name": "get_direct_parameter_of_scripting_command_of_scripting_suite_of",
+      "description": "Get The direct parameter of the command of scripting command"
+    },
+    {
+      "name": "get_hidden_of_scripting_command_of_scripting_suite_of_scripting",
+      "description": "Get Is the command hidden? of scripting command"
+    },
+    {
+      "name": "get_scripting_result_of_scripting_command_of_scripting_suite_of",
+      "description": "Get The object or data returned by this command of scripting command"
+    },
+    {
+      "name": "get_suite_name_of_scripting_command_of_scripting_suite_of",
+      "description": "Get The name of the suite to which this command belongs of scripting command"
+    },
+    {
+      "name": "get_name_of_scripting_enumeration_of_scripting_suite_of",
+      "description": "Get The name of the enumeration of scripting enumeration"
+    },
+    {
+      "name": "get_id_of_scripting_enumeration_of_scripting_suite_of_scripting",
+      "description": "Get The unique identifier of the enumeration of scripting enumeration"
+    },
+    {
+      "name": "get_hidden_of_scripting_enumeration_of_scripting_suite_of",
+      "description": "Get Is the enumeration hidden? of scripting enumeration"
+    },
+    {
+      "name": "get_name_of_scripting_enumerator_of_scripting_enumeration_of",
+      "description": "Get The name of the enumerator of scripting enumerator"
+    },
+    {
+      "name": "get_id_of_scripting_enumerator_of_scripting_enumeration_of",
+      "description": "Get The unique identifier of the enumerator of scripting enumerator"
+    },
+    {
+      "name": "get_description_of_scripting_enumerator_of_scripting",
+      "description": "Get The description of the enumerator of scripting enumerator"
+    },
+    {
+      "name": "get_hidden_of_scripting_enumerator_of_scripting_enumeration_of",
+      "description": "Get Is the enumerator hidden? of scripting enumerator"
+    },
+    {
+      "name": "get_name_of_scripting_parameter_of_scripting_command_of",
+      "description": "Get The name of the parameter of scripting parameter"
+    },
+    {
+      "name": "get_id_of_scripting_parameter_of_scripting_command_of_scripting",
+      "description": "Get The unique identifier of the parameter of scripting parameter"
+    },
+    {
+      "name": "get_description_of_scripting_parameter_of_scripting_command_of",
+      "description": "Get The description of the parameter of scripting parameter"
+    },
+    {
+      "name": "get_hidden_of_scripting_parameter_of_scripting_command_of",
+      "description": "Get Is the parameter hidden? of scripting parameter"
+    },
+    {
+      "name": "get_kind_of_scripting_parameter_of_scripting_command_of",
+      "description": "Get The kind of object or data specified by this parameter of scripting parameter"
+    },
+    {
+      "name": "get_optional_of_scripting_parameter_of_scripting_command_of",
+      "description": "Get Is the parameter optional? of scripting parameter"
+    },
+    {
+      "name": "get_name_of_scripting_property_of_scripting_class_of_scripting",
+      "description": "Get The name of the property of scripting property"
+    },
+    {
+      "name": "get_id_of_scripting_property_of_scripting_class_of_scripting",
+      "description": "Get The unique identifier of the property of scripting property"
+    },
+    {
+      "name": "get_access_of_scripting_property_of_scripting_class_of",
+      "description": "Get The type of access to this property of scripting property"
+    },
+    {
+      "name": "get_description_of_scripting_property_of_scripting_class_of",
+      "description": "Get The description of the property of scripting property"
+    },
+    {
+      "name": "get_enumerated_of_scripting_property_of_scripting_class_of",
+      "description": "Get Is the property's value an enumerator? of scripting property"
+    },
+    {
+      "name": "get_hidden_of_scripting_property_of_scripting_class_of",
+      "description": "Get Is the property hidden? of scripting property"
+    },
+    {
+      "name": "get_kind_of_scripting_property_of_scripting_class_of_scripting",
+      "description": "Get The kind of object or data returned by this property of scripting property"
+    },
+    {
+      "name": "get_listed_of_scripting_property_of_scripting_class_of",
+      "description": "Get Is the property's value a list? of scripting property"
+    },
+    {
+      "name": "get_description_of_scripting_result_object",
+      "description": "Get The description of the property of scripting result object"
+    },
+    {
+      "name": "get_enumerated_of_scripting_result_object",
+      "description": "Get Is the scripting result's value an enumerator? of scripting result object"
+    },
+    {
+      "name": "get_kind_of_scripting_result_object",
+      "description": "Get The kind of object or data returned by this property of scripting result object"
+    },
+    {
+      "name": "get_listed_of_scripting_result_object",
+      "description": "Get Is the scripting result's value a list? of scripting result object"
+    },
+    {
+      "name": "get_name_of_scripting_suite_of_scripting_definition_object",
+      "description": "Get The name of the suite of scripting suite"
+    },
+    {
+      "name": "get_id_of_scripting_suite_of_scripting_definition_object",
+      "description": "Get The unique identifier of the suite of scripting suite"
+    },
+    {
+      "name": "get_description_of_scripting_suite_of_scripting_definition",
+      "description": "Get The description of the suite of scripting suite"
+    },
+    {
+      "name": "get_hidden_of_scripting_suite_of_scripting_definition_object",
+      "description": "Get Is the suite hidden? of scripting suite"
+    }
+  ],
+  "keywords": [
+    "system-events",
+    "applescript",
+    "automation",
+    "hierarchy",
+    "static-data",
+    "class-structure"
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin"
+    ]
+  },
+  "name": "system-events-applescript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stardae/system-events-applescript"
+  }
+}
